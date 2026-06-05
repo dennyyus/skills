@@ -1,12 +1,12 @@
 # claude-skills
 
-Custom skills for Claude Code, based on the product thinking of Shreyas Doshi.
+Custom skills for Claude Code.
 
 ## Skills
 
-### `problem-validation`
+### `raw-motivation`
 
-A Socratic framework for finding the true problem behind a product, not the dressed-up version. Uses three tests (Language, Body, Mechanism) to strip away analytical framing and get to the raw human motivation.
+A Socratic framework for finding the true problem behind a product, not the dressed-up version. Uses three tests (Language, Body, Mechanism) to strip away analytical framing and get to the raw human motivation. Based on the product thinking of Shreyas Doshi.
 
 **Key features:**
 - Asks questions instead of handing over answers — user arrives at the truth themselves
@@ -24,7 +24,7 @@ A Socratic framework for finding the true problem behind a product, not the dres
 
 ### `psd-framework`
 
-A structured three-phase framework for building or evaluating product strategy.
+A structured three-phase framework for building or evaluating product strategy. Based on the product thinking of Shreyas Doshi.
 
 **Phases:** Positioning (vision) → Segmentation (strategy) → Differentiation (execution)
 
@@ -39,7 +39,7 @@ A structured three-phase framework for building or evaluating product strategy.
 
 ### `critical-discernment`
 
-A judgment layer for product and strategy questions. Runs a four-step loop (Perceive, Project, Audit, Communicate) on its own first draft before answering, and again when you push back — so the output adds taste on top of the fluent-but-shallow default instead of agreeing with you.
+A judgment layer for product and strategy questions. Runs a four-step loop (Perceive, Project, Audit, Communicate) on its own first draft before answering, and again when you push back — so the output adds taste on top of the fluent-but-shallow default instead of agreeing with you. Based on the product thinking of Shreyas Doshi.
 
 **Key features:**
 - Auto-triggers on "what do you think of X", "poke holes in this", PRD and strategy reviews, "should we build or kill X"
@@ -57,13 +57,33 @@ A judgment layer for product and strategy questions. Runs a four-step loop (Perc
 
 ---
 
+### `mastery-loop`
+
+An incremental teaching framework that confirms deep understanding before moving on — not just explanation, but verified mastery. Based on a widely-used teaching methodology (590 stars on GitHub).
+
+**Key features:**
+- Has the learner restate their understanding first, then fills gaps — never explains blind
+- Runs a loop: explain → drill on why → quiz → confirm → advance
+- Maintains a running checklist of everything the learner must understand; session doesn't end until it's complete
+- Supports ELI5, ELI14, and "explain like I'm an intern" modes on request
+- Quizzes with randomized answer order, withholds correct answer until submitted
+
+**Trigger when:**
+- "Explain this to me", "walk me through", "help me understand", "teach me"
+- Learning from a code review, PR, design decision, or system
+- The user has a surface-level grasp and needs to go deeper
+- Any situation where "I understand" needs to actually be verified
+
+---
+
 ## Installation
 
 Each skill is a folder. Place it in your Claude Code skills directory:
 
 ```
-~/.claude/skills/problem-validation/SKILL.md
+~/.claude/skills/raw-motivation/SKILL.md
 ~/.claude/skills/psd-framework/SKILL.md
 ~/.claude/skills/critical-discernment/SKILL.md
 ~/.claude/skills/critical-discernment/references/slack-discernment-annotated.md
+~/.claude/skills/mastery-loop/SKILL.md
 ```

@@ -1,5 +1,5 @@
 ---
-name: problem-validation
+name: raw-motivation
 description: >-
   Validate whether a stated product problem is real or a dressed-up solution. Use this skill when the user wants
   to stress-test a problem statement, check if they've identified the true user motivation, or pressure-test the
