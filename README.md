@@ -60,5 +60,5 @@ Or copy directly from this repo:
 
 ```
 curl -o ~/.claude/skills/dy-pm-skills/SKILL.md --create-dirs \
-  https://raw.githubusercontent.com/dennyyus09/claude-skills/main/dy-pm-skills.md
+  https://raw.githubusercontent.com/dennyyus/claude-skills/main/dy-pm-skills.md
 ```
