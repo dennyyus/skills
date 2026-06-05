@@ -48,6 +48,26 @@ A structured three-phase framework for building or evaluating product strategy. 
 
 ---
 
+### `critical-discernment`
+
+A judgment layer for product and strategy questions. It runs a four-step loop (Perceive, Project, Audit, Communicate) on its own first draft before answering, and again when you push back, so the output adds taste on top of the fluent-but-shallow default instead of agreeing with you. Based on Shreyas Doshi's Critical Discernment framework.
+
+**Key features:**
+- Auto-triggers on "what do you think of X", "poke holes in this", PRD and strategy reviews, "should we build or kill X"
+- Forces a committed call plus the principle behind it, the assumption to check first, and the specific failure mode
+- Anti-capitulation protocol: updates only when a critique is sound and names what was wrong, instead of mirroring the last message
+- Spots plausible retrofits: tidy narratives reverse-engineered from an outcome that cannot be acted on
+- Models the buyer, champion, and blocker, not just the end user
+- Ships with `references/slack-discernment-annotated.md`, a real transcript annotated against the loop
+
+**Trigger when:**
+- Pressure-testing a decision, plan, or strategy
+- Reviewing a PRD, roadmap, or doc where a real call is at stake
+- Giving a second opinion or weighing trade-offs
+- You catch yourself about to produce a smooth, agreeable answer to a question that deserves a position
+
+---
+
 ## Installation
 
 Place the skill folder in your Claude Code skills directory:
@@ -61,4 +81,11 @@ Or copy directly from this repo:
 ```
 curl -o ~/.claude/skills/dy-pm-skills/SKILL.md --create-dirs \
   https://raw.githubusercontent.com/dennyyus/claude-skills/main/dy-pm-skills.md
+```
+
+For `critical-discernment`, copy the whole folder (it includes a `references/` subfolder):
+
+```
+~/.claude/skills/critical-discernment/SKILL.md
+~/.claude/skills/critical-discernment/references/slack-discernment-annotated.md
 ```
