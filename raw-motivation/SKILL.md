@@ -122,3 +122,13 @@ Do not hand over the answer mid-conversation. Do not soften a fail. The value is
 **Supply-side:** Cost and risk of a bad or slow hire. Recruiters are accountable for empty seats and wrong fits.
 
 **Verdict:** The original statement describes the mechanism. The real problems are fear of stagnation + status anxiety (demand) and hiring risk (supply).
+
+---
+
+## Gotchas
+
+- **Concluding too early.** The first restatement is almost never the real problem. Push at least one level deeper before accepting an answer — if the user can still describe it in product language, you haven't reached the felt problem yet.
+- **Conflating demand-side and supply-side.** They almost always have different root problems. Run the tests on each side separately. A solution that solves demand but ignores supply (or vice versa) is incomplete.
+- **Handing over the answer.** The whole point is that the user arrives at the truth themselves. If you state the real problem before they do, you've done the work for them and they won't own it. Hold back until they're one probe away, then confirm.
+- **Accepting jargon as a felt problem.** Words like "streamline," "empower," "seamless," or "self-directed" are flags, not answers. Any problem statement that could appear in a pitch deck hasn't passed the Language Test yet.
+- **Skipping the two-layer probe.** Crisis layer explains sign-up; baseline layer explains retention. A product that only solves the crisis loses users the moment it resolves. Don't skip this even if the crisis layer feels like a complete answer.

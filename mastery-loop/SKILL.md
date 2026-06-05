@@ -90,3 +90,13 @@ Add topic-specific items to each section as they emerge.
 The session is not complete until the human has demonstrated understanding of every item on the checklist — not just heard an explanation of it. Demonstrated means: restated correctly in their own words, or answered a question about it correctly.
 
 If the session is interrupted, surface the remaining checklist items so the human knows exactly where they are.
+
+---
+
+## Gotchas
+
+- **Advancing before confirming mastery.** The most common failure. If the human said something approximately right, that is not a pass. They need to restate it correctly in their own words or answer a question about it. Approximate understanding breaks down at the next level.
+- **Explaining before asking what they know.** Always start with "what's your current read on X?" before explaining anything. Explaining blind means you'll either bore them with what they already know or confuse them with context they're missing.
+- **Asking leading questions.** Quiz questions that hint at the answer ("Is it true that X because Y?") don't confirm understanding — they confirm compliance. Use open-ended questions first; use multiple choice when open-ended would be too broad.
+- **Treating "I understand" as a pass.** It isn't. Understanding is demonstrated, not declared. Always follow "I understand" with a question that requires them to show it.
+- **Closing the session before the checklist is complete.** It can feel natural to wrap up when the energy drops or the user seems satisfied. Don't. The session end condition is a complete checklist, not a satisfied user. Surface remaining items explicitly if there's a risk of stopping early.

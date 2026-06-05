@@ -126,3 +126,13 @@ A user asks for the best psychographic segmentation example for building tech pr
 That answer is a retrofit, and it fails the moment the user asks the discernment question: *how is that targetable?* You cannot buy ads against "perfectionism." The real segment is behavioral and situational: cross-functional project teams in tech companies with daily, high-touch coordination needs that email served too slowly and meetings too disruptively. The deeper read arrives only by modeling more players: managers adopted Slack for ambient visibility and pushed it upward, so adoption ran from individual contributors to shadow IT to executive mandate. That is an org-power dynamic, not a personality type.
 
 Two lessons this encodes. First, a clean psychological narrative you derived from the outcome is decoration, not insight; test it against "could this have predicted who would buy?" Second, when the user pressure-tests, do not enthusiastically rewrite your story each turn. Run Perceive on the push and converge on the targetable truth. The full transcript, annotated turn by turn against the loop, is in `references/slack-discernment-annotated.md`. Read it when you want to see exactly how the capitulation reflex looks in practice and what should have happened instead.
+
+---
+
+## Gotchas
+
+- **Capitulating to pushback without cause.** The most common failure. If the user disagrees, run Perceive on the challenge before updating your position. Only update if the critique identifies a real flaw — and name what was wrong. "You're right, good point" with no named error is capitulation disguised as open-mindedness.
+- **Fluent confidence mistaken for judgment.** A well-written answer that cites frameworks and uses precise language is not automatically a good answer. The loop exists because fluency is cheap. Run it even when the first draft feels solid — especially then.
+- **Plausible retrofits.** A neat narrative built backwards from a known outcome cannot be acted on. Before committing to any causal story, ask: could this have been used to predict the outcome before it happened? If no, it's a retrofit. Flag it rather than presenting it as insight.
+- **Modeling only the end user.** Most decisions involve a buyer, a champion, and at least one blocker. An analysis that only models the person who uses the product misses the org-power dynamics that actually determine what gets bought, approved, or killed.
+- **Skipping the Audit step when short on time.** Audit is the step most likely to be dropped under pressure. It is also the step that catches the most errors. Do not skip it — run it silently and fast if needed, but run it.

@@ -169,3 +169,14 @@ Write 2–3 sentences summarizing:
 Deliver each phase sequentially. Do not combine phases into a single artifact — they answer different questions and may have different audiences.
 
 After all three phases, offer a one-paragraph synthesis: how the positioning vision, the target segment, and the differentiation table connect into a coherent strategy.
+
+---
+
+## Gotchas
+
+- **Vanity positioning.** The most common failure mode. Axes chosen to put the product in a favorable empty quadrant are reverse-engineered from strengths, not from user decision criteria. Test every axis: would a real user evaluate options along this dimension? If not, rebuild.
+- **Cherry-picked competitors.** Always include the strongest archetype even if it's unflattering. A clean map with no strong rivals is a red flag — either the axes are wrong or the hardest competitor was left out.
+- **Disconnected phases.** Phase 3 factors must come from the Phase 2 priority-1 segment's decision criteria. Phase 3 competitor groups must be the same archetypes from Phase 1. If the phases don't chain, the whole framework collapses into three independent artifacts that don't add up to a strategy.
+- **D without durability.** A D a competitor can replicate in 6–12 months is a roadmap item, not a strategic position. Flag it explicitly rather than letting it masquerade as a moat.
+- **Skipping segment narrative.** The segmentation matrix is worthless without the priority-1 narrative. That narrative is where the strategy lives — who they are, what they care about, what they'd use instead. Without it, Phase 3 has no anchor.
+- **Solving for positioning before segmentation.** The phases are ordered for a reason. Don't let the user pressure you into jumping to differentiation before the target segment is locked — differentiation on a factor the priority-1 segment doesn't care about is meaningless.
