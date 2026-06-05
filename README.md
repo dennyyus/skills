@@ -1,21 +1,10 @@
 # claude-skills
 
-Custom skills for Claude Code by Denny Yusuf.
+Custom skills for Claude Code, based on the product thinking of Shreyas Doshi.
 
 ## Skills
 
-### `dy-pm-skills`
-
-One skill, two frameworks. Invoke with an argument:
-
-| Command | What it does |
-|---|---|
-| `/dy-pm-skills validation` | Stress-tests a product problem statement |
-| `/dy-pm-skills strategy` | Builds or evaluates a product strategy |
-
----
-
-#### `validation` — Problem Validation
+### `problem-validation`
 
 A Socratic framework for finding the true problem behind a product, not the dressed-up version. Uses three tests (Language, Body, Mechanism) to strip away analytical framing and get to the raw human motivation.
 
@@ -33,9 +22,9 @@ A Socratic framework for finding the true problem behind a product, not the dres
 
 ---
 
-#### `strategy` — PSD Framework
+### `psd-framework`
 
-A structured three-phase framework for building or evaluating product strategy. Based on the PM practice of Denny Yusuf, referencing Michael Porter's segmentation approach and Shreyas Doshi's product thinking.
+A structured three-phase framework for building or evaluating product strategy.
 
 **Phases:** Positioning (vision) → Segmentation (strategy) → Differentiation (execution)
 
@@ -50,7 +39,7 @@ A structured three-phase framework for building or evaluating product strategy. 
 
 ### `critical-discernment`
 
-A judgment layer for product and strategy questions. It runs a four-step loop (Perceive, Project, Audit, Communicate) on its own first draft before answering, and again when you push back, so the output adds taste on top of the fluent-but-shallow default instead of agreeing with you. Based on Shreyas Doshi's Critical Discernment framework.
+A judgment layer for product and strategy questions. Runs a four-step loop (Perceive, Project, Audit, Communicate) on its own first draft before answering, and again when you push back — so the output adds taste on top of the fluent-but-shallow default instead of agreeing with you.
 
 **Key features:**
 - Auto-triggers on "what do you think of X", "poke holes in this", PRD and strategy reviews, "should we build or kill X"
@@ -70,22 +59,11 @@ A judgment layer for product and strategy questions. It runs a four-step loop (P
 
 ## Installation
 
-Place the skill folder in your Claude Code skills directory:
+Each skill is a folder. Place it in your Claude Code skills directory:
 
 ```
-~/.claude/skills/dy-pm-skills/SKILL.md
-```
-
-Or copy directly from this repo:
-
-```
-curl -o ~/.claude/skills/dy-pm-skills/SKILL.md --create-dirs \
-  https://raw.githubusercontent.com/dennyyus/claude-skills/main/dy-pm-skills.md
-```
-
-For `critical-discernment`, copy the whole folder (it includes a `references/` subfolder):
-
-```
+~/.claude/skills/problem-validation/SKILL.md
+~/.claude/skills/psd-framework/SKILL.md
 ~/.claude/skills/critical-discernment/SKILL.md
 ~/.claude/skills/critical-discernment/references/slack-discernment-annotated.md
 ```
