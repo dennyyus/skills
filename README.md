@@ -1,8 +1,6 @@
-# claude-skills
+## Skills
 
 Custom skills.
-
-## Skills
 
 ### `raw-motivation`
 
