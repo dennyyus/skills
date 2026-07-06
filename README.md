@@ -1,6 +1,6 @@
 # claude-skills
 
-Custom skills for Claude Code.
+Custom skills.
 
 ## Skills
 
