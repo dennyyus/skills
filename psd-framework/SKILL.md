@@ -91,7 +91,19 @@ Example structure:
 | Routine manual givers | 2 | 4 |
 | CC-driven manual givers | 3 | x |
 
-**3. Priority-1 segment narrative**
+**3. Test the segmentation**
+
+Before writing the priority-1 narrative, run the segmentation through five tests (Shreyas Doshi). If it fails any of these, the segmentation is not yet usable — rebuild the dimensions rather than proceeding.
+
+1. **Consistent needs** — core needs within each segment are fairly consistent, with non-trivial variance across segments. If two segments want the same thing, they are not distinct segments.
+2. **Product-specific** — the approach is specific to your product or category. A generic cut (company size, age, geography) that could apply to any product won't drive decisions for yours.
+3. **Prioritizable** — you can set genuinely different priorities across segments, with clarity on which are highest priority and which are explicitly not. If everything is a priority, the segmentation isn't doing its job.
+4. **Findable** — there is a reliable way to identify and reach customers in each segment. Some creative execution is fine; no way to find them is not.
+5. **Winnable** — you can build a differentiated value proposition for the highest-priority segments such that you can plausibly win, and winning is worthwhile.
+
+These chain into the rest of the framework: Prioritizable is the matrix in step 2, Findable is the go-to-market reality the step 4 narrative must address, and Winnable is what Phase 3's differentiation table has to prove. A #1 segment that passes here but earns no D in Phase 3 has failed the Winnable test in practice.
+
+**4. Priority-1 segment narrative**
 
 For the #1 cell, write a short description:
 - Who they are (behavioral, not just demographic)
