@@ -17,6 +17,8 @@ A structured three-phase framework for building or evaluating product strategy.
 
 Positioning is a vision tool (where we aspire to be). Segmentation is a strategy tool (who we're building for). Differentiation is an execution tool (how we win with that segment). This order is non-negotiable: vision sets direction, strategy narrows the target, execution proves the claim.
 
+Most failure modes below share one root cause: the analyst quietly reverse-engineers the artifact to flatter the product. Treat every clean result — an empty quadrant, a lone cell, an all-strong row — as an error until proven otherwise.
+
 ---
 
 ## Phase 1 — Positioning (Vision)
@@ -36,11 +38,24 @@ Group competitors into archetypes (typically 2–4 groups). Common archetypes:
 
 For each group, identify: what they claim, who they serve, where they are strong.
 
+Verify claims at the **primary source** — the competitor's own site, pricing page, FAQ. Never characterize a rival from the client's SEO or comparison-blog content; "X vs Y" search results are usually polluted by the client's own marketing and will hand you a flattering, wrong picture.
+
+While verifying, check whether a rival's position is **brand-locked**: if a competitor's brand ideology is the opposite pole of your differentiator, it cannot copy you without a brand U-turn. A brand-locked gap is far more durable than a feature gap — note it, it feeds Phase 3 durability.
+
 **2. Positioning map**
 
 Build a 2x2 map. Axes must be derived from how users actually decide, not from where the product already excels. Test: would a user evaluate options along this dimension? If axes were chosen to isolate the product in a favorable quadrant, flag as vanity positioning.
 
-Plot all competitor groups. A clean empty quadrant with no rivals is suspicious — either the axes are reverse-engineered, or key competitors are missing.
+Prefer **jobs-based axes** — who does the work, what the customer hires the product for (cf. Teixeira's decoupling maps) — over deal-structure or product-attribute axes. Customer-type axes (e.g. Hertz vs Enterprise) are legitimate for where-to-play maps, but only if the two players genuinely serve different customers; verify that before using, don't assume it.
+
+Plot all competitor groups, then run these checks:
+
+- **Diagonal test.** If all players fall on one diagonal, the axes are correlated — you've drawn one dimension twice. Collapse to a single spectrum, or replace one axis. A 2x2 earns its second dimension only when the off-diagonal cells hold real businesses.
+- **One player, one home cell.** A brand appearing in multiple cells is a refusal to choose, not strong positioning. Assign each player a single home cell. Choosing a home cell can be a strategic act, not just a description — e.g. picking the cell with the best unit economics against current demand evidence; if that's the move, say so and name the data that would validate it. Product lines that genuinely sit elsewhere are line extensions — draw them as arrows from the home cell, not as second homes.
+- **Vanity-cell standing rule.** If the product lands alone in a cell, treat it as an error until proven otherwise. This pattern recurs in disguises — expect to catch yourself two or three times per map: a binary axis (has-it / doesn't), a compound axis ("certified + protected") that fuses two things to manufacture a private corner, or an unverifiable customer split. Kill each one and re-plot.
+- **Empty quadrant.** A clean empty quadrant with no rivals is suspicious — either the axes are reverse-engineered, or key competitors are missing.
+
+**Zoom-in (situational).** When the contested action is inside one cell, a second map drawn inside that cell is legitimate (e.g. Zipcar re-segmenting home-city renters). Keep it as a one-off artifact for that decision, not a standing part of the deliverable.
 
 **3. Positioning statement**
 
@@ -77,11 +92,16 @@ Use needs-based dimensions first. If needs alone are insufficient to create mean
 
 Use the minimum number of dimensions needed. A 2x2 or 3x3 matrix is usually sufficient.
 
+Three disciplines when picking dimensions:
+- **Attributes become axes only on evidence.** Promote an attribute to an axis only when it's tied to divergent LTV or churn — never on intuition that it "feels" segmenting. Everything else is a within-cell modifier (see step 3).
+- **Capacity is not disposition, and neither is "rich vs poor."** Ability-to-pay (cash-flow slack, visible in billing telemetry) and value-orientation (aspiration-led vs value-led) are independent. Disposition is usually a within-cell modifier and an underwriting signal, not an axis.
+- **Transitional states are not segments.** Anything a customer resolves out of within a term or two — "try-first", undecided, trialing — is a funnel stage. Don't give it a cell; measure what it resolves into.
+
 **2. Build the segmentation table**
 
 Rows and columns represent the chosen dimensions. Each cell is either:
 - A number (1, 2, 3...) indicating priority — 1 is highest
-- An x indicating non-viable or not worth pursuing
+- An x indicating a segment you are deciding not to pursue
 
 Example structure:
 
@@ -91,19 +111,33 @@ Example structure:
 | Routine manual givers | 2 | 4 |
 | CC-driven manual givers | 3 | x |
 
-**3. Test the segmentation**
+Standards for the finished matrix:
+- **Concrete, pointable labels.** Aim for the canonical Stripe/Slack look: 4–6 cells, two dimensions, labels that name a specific kind of person — not constructs or adjectives. Every cell should conjure an actual customer you could go find.
+- **No tied priorities.** Two cells sharing a rank is a deferred decision. Force the ordering and state the reason — "already arriving, so we must serve them" beats "could theoretically win them" — but make the call.
+- **X-cells are decisions with named reasons.** Distinguish "can't afford them" (a risk / underwriting reason) from "can't win them" (a stronger alternative already owns them, a marketing reason). The two route to different functions, so name which it is.
+- **Encode the growth sequence in the numbers where you can.** Priority numbers can carry an expansion path, not just a ranking (Stripe's 1→2→3 is a route, not a leaderboard). If the expansion lives outside the matrix, name where.
 
-Before writing the priority-1 narrative, run the segmentation through five tests (Shreyas Doshi). If it fails any of these, the segmentation is not yet usable — rebuild the dimensions rather than proceeding.
+**3. Strip the matrix down to its layers**
+
+The delivered matrix is the clean top layer. Everything you worked through to get there — transitional/funnel states, dispositions, personas, GTM overlays — does not belong in the cells. Pull it into an explicit **"layers below the matrix"** list, e.g.:
+- Funnel stages (trial → resolved)
+- Catalog / creative splits
+- Underwriting signals (disposition, ability-to-pay)
+- GTM overlays (channel, motion)
+
+This keeps the matrix pointable while preserving the working-out for whoever operationalizes it.
+
+**4. Run the segmentation checklist (mandatory)**
+
+Score the segmentation against Shreyas Doshi's five tests before writing the narrative. Score honestly — partial and conditional passes are the useful signal, not a formality to wave through. If it fails outright, rebuild the dimensions rather than proceeding.
 
 1. **Consistent needs** — core needs within each segment are fairly consistent, with non-trivial variance across segments. If two segments want the same thing, they are not distinct segments.
 2. **Product-specific** — the approach is specific to your product or category. A generic cut (company size, age, geography) that could apply to any product won't drive decisions for yours.
-3. **Prioritizable** — you can set genuinely different priorities across segments, with clarity on which are highest priority and which are explicitly not. If everything is a priority, the segmentation isn't doing its job.
-4. **Findable** — there is a reliable way to identify and reach customers in each segment. Some creative execution is fine; no way to find them is not.
-5. **Winnable** — you can build a differentiated value proposition for the highest-priority segments such that you can plausibly win, and winning is worthwhile.
+3. **Prioritizable** — you can set genuinely different priorities, with clarity on highest-priority and explicit non-priorities. This is the matrix in step 2.
+4. **Findable** — there is a reliable way to identify and reach customers in each segment. This is usually the weakest test for internal-state axes (needs, disposition, intent). Mitigate with a signup intent question plus telemetry so the base self-classifies — say so if that's the plan.
+5. **Winnable** — you can build a differentiated value proposition for the highest-priority segments such that you can plausibly win, and winning is worthwhile. This is what Phase 3's differentiation table has to prove. Winnability is often conditional on roadmap gaps — if the product can't win the #1 segment today, say so plainly: *"the segmentation is ahead of the product."*
 
-These chain into the rest of the framework: Prioritizable is the matrix in step 2, Findable is the go-to-market reality the step 4 narrative must address, and Winnable is what Phase 3's differentiation table has to prove. A #1 segment that passes here but earns no D in Phase 3 has failed the Winnable test in practice.
-
-**4. Priority-1 segment narrative**
+**5. Priority-1 segment narrative**
 
 For the #1 cell, write a short description:
 - Who they are (behavioral, not just demographic)
@@ -128,12 +162,23 @@ Factors must come from the priority-1 segment's decision criteria identified in 
 
 Typical number of factors: 5–8. More than 10 becomes unmanageable.
 
+Factor-set hygiene:
+- **Drop parity factors.** A factor everyone scores 3 on can't swing a decision — fold it into a composite instead of giving it a row.
+- **Single-segment factors belong in segmentation.** A factor only one segment perceives is a segmentation signal, not a differentiation axis — move it back to Phase 2.
+- **Watch factor altitude.** Composite, customer-language factors (the 5±2 a customer would actually name) aid retention and readability but hide granular Bs. Carry "thin" annotations — the ghosts of the weak sub-factors — so the roadmap doesn't lose them.
+
 **2. Score competitors**
 
 Use competitor groups from Phase 1 (no re-mapping needed). Score each group per factor on a 1–3 scale:
 - 1 = weak or absent
 - 2 = adequate
 - 3 = strong
+
+Two scoring disciplines:
+- **Score the segment's USE of the factor, not the competitor's general competence.** A telco's polished billing app is not a 3 on "self-serve line rotation" if the priority-1 segment can't actually do that job with it. Grade against the job, not the brand's overall capability.
+- **Denominator bias.** Complaint logs and interview grievances measure what breaks, not how often it breaks. Don't grade a B off squeaky-wheel evidence without an incidence rate. Also check whose pain it is — pain concentrated in a non-priority segment should not down-score a factor for the priority segment.
+
+**Benchmarks.** Out-of-market players (global leaders the customer can't actually buy) may appear as marked calibration columns — italicized, footnoted — but are never scored as real choices. Use them to (a) calibrate what a 3 looks like, (b) locate global whitespace, (c) import cautionary operational lessons.
 
 **3. Assign B/T/D for the product**
 
@@ -142,34 +187,47 @@ For each factor, assign one of:
 - **T** (Threshold) — product meets the bar but does not stand out. Action: maintain, don't over-invest.
 - **D** (Differentiation) — product is genuinely ahead in a way that matters to this segment. Action: protect, deepen, amplify.
 
+**Grade-inflation guard.** Any score negotiated upward during iteration needs an operational B-test: *"would a priority-1 customer reject the product on this factor alone?"* Answer it from segment-cut churn reasons and funnel completion — not from debate in the room. Record the test result next to the table so the score is auditable.
+
 **4. Build the table**
 
-| Factor | [Group 1] | [Group 2] | [Group 3] | [Product] |
+| Factor | [Group 1] | [Group 2] | *[Benchmark]* | [Product] |
 |---|---|---|---|---|
-| Factor A | 1–3 | 1–3 | 1–3 | B/T/D |
-| Factor B | 1–3 | 1–3 | 1–3 | B/T/D |
+| Factor A | 1–3 | 1–3 | *1–3* | B/T/D |
+| Factor B | 1–3 | 1–3 | *1–3* | B/T/D |
+
+Benchmark columns, if any, are italicized/footnoted as calibration — not choices the customer can make.
 
 **5. Stress-test D claims**
 
 For each D, ask: is this a structural moat or a temporary head start?
-- Structural moats: data advantages, network effects, regulatory position, deep segment trust built over time
+- Structural moats: data advantages, network effects, regulatory position, brand-locked rivals (Phase 1), deep segment trust built over time
 - Temporary head starts: features that competitors can copy in 6–12 months
 
 Flag temporary head starts — they are not real differentiation without a plan to widen the gap.
 
-**6. Strategy narrative**
+**6. Read the shape of the table**
+
+Before writing the narrative, read the pattern of the product's column:
+- **All-T (no Bs, no Ds)** — the profile of a competent #2: nothing losing, nothing winning. The strategy then lives entirely in the T→D conversions. Name them and their gating decisions; don't let an all-T table masquerade as a strategy.
+- **B on a key factor** — a blocker; fix before the strategy is viable.
+- **D on a factor the priority-1 segment doesn't care about** — meaningless; ignore it.
+
+**7. Strategy narrative**
 
 Write 2–3 sentences summarizing:
 - Where the Ds land (the actual strategic bets)
 - What Bs are blockers that need resolving before the strategy is viable
-- Roadmap implication: Bs on key factors = fix first; Ts = maintain; Ds = build depth
+- Roadmap implication: Bs on key factors = fix first; Ts = maintain; Ds = build depth; named T→D conversions = the growth path
 
 ---
 
 ## Guard Rails
 
-- **No vanity positioning.** Axes and factors must reflect user decision criteria, not product strengths.
+- **No vanity positioning.** Axes and factors must reflect user decision criteria, not product strengths. A product alone in a cell is an error until proven otherwise.
 - **No cherry-picked competitors.** Always include the strongest archetype, even if unflattering.
+- **Verify at the primary source.** Competitor claims come from the competitor, not from the client's SEO.
+- **Attributes become axes only on evidence** of divergent LTV/churn — never on intuition.
 - **No disconnected phases.** Competitor groups from Phase 1 feed Phase 3. Segment criteria from Phase 2 feed Phase 3 factors. If the phases are internally inconsistent, flag it before proceeding.
 - **D without durability is misleading.** A D that competitors can replicate in a year is a roadmap item, not a strategic position.
 - **Segment first, differentiate second.** A D on a factor the priority-1 segment doesn't care about is meaningless.
@@ -182,13 +240,40 @@ Deliver each phase sequentially. Do not combine phases into a single artifact �
 
 After all three phases, offer a one-paragraph synthesis: how the positioning vision, the target segment, and the differentiation table connect into a coherent strategy.
 
+The PSD output is the **engine** of a strategy doc, not the doc itself. Offer to assemble it into a Rumelt-kernel structure:
+
+1. **Diagnosis** — the situation stated with the unflattering metrics, not the flattering ones
+2. **Vision** — where this goes if it works
+3. **Priorities and explicit non-priorities** — what we are and are not doing
+4. **Evidence** — including willingness-to-pay
+5. **Differentiation** — the Phase 3 table
+6. **Game plan** — the coherent set of actions
+7. **30-day actions** — what happens now
+
+Two things on every deliverable:
+
+- **A "what would make this wrong" section.** List the assumptions that, if false, break the analysis — and lead with the single cheapest data pull that gates the most phases (e.g. the end-of-term decision mix). If the client funds only one query, it should be that one.
+- **Framing for the room.** Before the strategy is ratified, offer the same content two ways: an *analysis* framing (hypotheses + open questions) or a *strategy* framing (decisions + actions). Same substance, different political weight — let the user pick based on where the decision actually stands.
+
 ---
 
 ## Gotchas
 
-- **Vanity positioning.** The most common failure mode. Axes chosen to put the product in a favorable empty quadrant are reverse-engineered from strengths, not from user decision criteria. Test every axis: would a real user evaluate options along this dimension? If not, rebuild.
-- **Cherry-picked competitors.** Always include the strongest archetype even if it's unflattering. A clean map with no strong rivals is a red flag — either the axes are wrong or the hardest competitor was left out.
-- **Disconnected phases.** Phase 3 factors must come from the Phase 2 priority-1 segment's decision criteria. Phase 3 competitor groups must be the same archetypes from Phase 1. If the phases don't chain, the whole framework collapses into three independent artifacts that don't add up to a strategy.
-- **D without durability.** A D a competitor can replicate in 6–12 months is a roadmap item, not a strategic position. Flag it explicitly rather than letting it masquerade as a moat.
-- **Skipping segment narrative.** The segmentation matrix is worthless without the priority-1 narrative. That narrative is where the strategy lives — who they are, what they care about, what they'd use instead. Without it, Phase 3 has no anchor.
-- **Solving for positioning before segmentation.** The phases are ordered for a reason. Don't let the user pressure you into jumping to differentiation before the target segment is locked — differentiation on a factor the priority-1 segment doesn't care about is meaningless.
+- **Vanity positioning.** The most common failure mode, and it recurs in disguises — expect to catch yourself two or three times per map. Axes reverse-engineered from strengths to hand the product an empty quadrant. Watch for binary axes, compound axes ("certified + protected"), and unverifiable customer splits that manufacture a private cell. Standing rule: a product alone in a cell is an error until proven otherwise.
+- **Correlated axes (the diagonal).** If every player sits on one diagonal, the two axes are the same dimension twice. Collapse to a spectrum or swap an axis — the off-diagonal cells must hold real businesses or the 2x2 hasn't earned its second dimension.
+- **Multi-cell brands.** A player smeared across cells is a refusal to choose. Give each a home cell; everything else is a line extension drawn as an arrow.
+- **Polluted sources.** "X vs Y" searches surface the client's own comparison blogs. Verify every competitor claim on the competitor's own surface.
+- **Cherry-picked competitors.** Always include the strongest archetype even if it's unflattering. A clean map with no strong rivals is a red flag.
+- **Transitional states treated as segments.** "Try-first" and "undecided" resolve within a term or two — they're funnel stages. Measure what they resolve into; don't give them a cell.
+- **Capacity/disposition confusion.** Ability-to-pay and value-orientation are independent, and neither is "rich vs poor." Disposition is usually a within-cell underwriting signal, not an axis.
+- **Tied priorities.** Two cells at the same rank is a decision deferred. Force the order, name the reason.
+- **Unlabeled X-cells.** "Can't afford them" (risk) and "can't win them" (a rival owns them) are different decisions with different owners. Name which.
+- **Findability blind spot.** Internal-state segmentations (needs, intent, disposition) are hard to find in the wild. If you can't answer "how would we identify this person at signup," the segmentation isn't operational yet — add an intent question + telemetry.
+- **Scoring competence instead of use.** A rival's capability on a job the priority-1 segment can't actually execute is not a 3. Grade the segment's use of the factor.
+- **Denominator bias.** Grievances measure what breaks, not how often. No B off complaint logs without an incidence rate — and check whose segment the pain sits in.
+- **Grade inflation.** Scores that drift upward under discussion need the operational B-test ("would a priority-1 customer reject on this alone?"), answered from churn/funnel data, recorded next to the table.
+- **All-T table read as a strategy.** No Bs and no Ds is a competent #2, not a plan. The strategy is in the named T→D conversions, or there is no strategy.
+- **Disconnected phases.** Phase 3 factors must come from the Phase 2 priority-1 segment's decision criteria. Phase 3 competitor groups must be the same archetypes from Phase 1. If the phases don't chain, the framework collapses into three independent artifacts that don't add up to a strategy.
+- **D without durability.** A D a competitor can replicate in 6–12 months is a roadmap item. Brand-locked rivals give more durable Ds than feature gaps — prefer them.
+- **Skipping the segment narrative.** The matrix is worthless without the priority-1 narrative — that's where the strategy lives: who they are, what they care about, what they'd use instead.
+- **Solving for positioning before segmentation.** The phases are ordered for a reason. Differentiation on a factor the priority-1 segment doesn't care about is meaningless.
