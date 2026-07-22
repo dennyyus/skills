@@ -1,5 +1,5 @@
 ---
-name: psd-framework
+name: psd-analysis
 description: >-
   Build or evaluate a structured product strategy using a three-phase framework: Positioning (vision),
   Segmentation (strategy), Differentiation (execution). Use this skill whenever the user wants to define
@@ -9,9 +9,9 @@ description: >-
   or competitive comparison and wants feedback.
 ---
 
-# PSD Framework
+# PSD Analysis
 
-A structured three-phase framework for building or evaluating product strategy.
+A structured three-phase analysis for building or evaluating product strategy.
 
 **Core sequence:** Positioning → Segmentation → Differentiation
 
@@ -257,23 +257,33 @@ Two things on every deliverable:
 
 ---
 
-## Gotchas
+## Gotchas — quick self-audit
 
-- **Vanity positioning.** The most common failure mode, and it recurs in disguises — expect to catch yourself two or three times per map. Axes reverse-engineered from strengths to hand the product an empty quadrant. Watch for binary axes, compound axes ("certified + protected"), and unverifiable customer splits that manufacture a private cell. Standing rule: a product alone in a cell is an error until proven otherwise.
-- **Correlated axes (the diagonal).** If every player sits on one diagonal, the two axes are the same dimension twice. Collapse to a spectrum or swap an axis — the off-diagonal cells must hold real businesses or the 2x2 hasn't earned its second dimension.
-- **Multi-cell brands.** A player smeared across cells is a refusal to choose. Give each a home cell; everything else is a line extension drawn as an arrow.
-- **Polluted sources.** "X vs Y" searches surface the client's own comparison blogs. Verify every competitor claim on the competitor's own surface.
-- **Cherry-picked competitors.** Always include the strongest archetype even if it's unflattering. A clean map with no strong rivals is a red flag.
-- **Transitional states treated as segments.** "Try-first" and "undecided" resolve within a term or two — they're funnel stages. Measure what they resolve into; don't give them a cell.
-- **Capacity/disposition confusion.** Ability-to-pay and value-orientation are independent, and neither is "rich vs poor." Disposition is usually a within-cell underwriting signal, not an axis.
-- **Tied priorities.** Two cells at the same rank is a decision deferred. Force the order, name the reason.
-- **Unlabeled X-cells.** "Can't afford them" (risk) and "can't win them" (a rival owns them) are different decisions with different owners. Name which.
-- **Findability blind spot.** Internal-state segmentations (needs, intent, disposition) are hard to find in the wild. If you can't answer "how would we identify this person at signup," the segmentation isn't operational yet — add an intent question + telemetry.
-- **Scoring competence instead of use.** A rival's capability on a job the priority-1 segment can't actually execute is not a 3. Grade the segment's use of the factor.
-- **Denominator bias.** Grievances measure what breaks, not how often. No B off complaint logs without an incidence rate — and check whose segment the pain sits in.
-- **Grade inflation.** Scores that drift upward under discussion need the operational B-test ("would a priority-1 customer reject on this alone?"), answered from churn/funnel data, recorded next to the table.
-- **All-T table read as a strategy.** No Bs and no Ds is a competent #2, not a plan. The strategy is in the named T→D conversions, or there is no strategy.
-- **Disconnected phases.** Phase 3 factors must come from the Phase 2 priority-1 segment's decision criteria. Phase 3 competitor groups must be the same archetypes from Phase 1. If the phases don't chain, the framework collapses into three independent artifacts that don't add up to a strategy.
-- **D without durability.** A D a competitor can replicate in 6–12 months is a roadmap item. Brand-locked rivals give more durable Ds than feature gaps — prefer them.
-- **Skipping the segment narrative.** The matrix is worthless without the priority-1 narrative — that's where the strategy lives: who they are, what they care about, what they'd use instead.
-- **Solving for positioning before segmentation.** The phases are ordered for a reason. Differentiation on a factor the priority-1 segment doesn't care about is meaningless.
+Each item is explained where it fires, in the phase above. This is the scan pass before shipping: any line that trips means go back and fix.
+
+**Positioning**
+- Product lands alone in a cell → error until proven otherwise (binary / compound / unverifiable-split axis)
+- All players on one diagonal → correlated axes; collapse or swap
+- One brand across multiple cells → pick a home cell, rest are arrows
+- Empty quadrant, no strong rival → axes reverse-engineered or competitor missing
+- Competitor claim sourced from client SEO → re-verify at primary source
+
+**Segmentation**
+- "Try-first" / undecided given a cell → funnel stage, not a segment
+- Capacity confused with disposition, or "rich vs poor" → independent; disposition is within-cell
+- Axis promoted on intuition → require divergent LTV/churn first
+- Two cells tied on rank → force the order, name the reason
+- X-cell with no reason → is it "can't afford" (risk) or "can't win" (marketing)?
+- Internal-state axis with no signup signal → not findable yet; add intent question + telemetry
+
+**Differentiation**
+- Scored competitor competence, not the segment's use → regrade against the job
+- B graded off complaint logs → need an incidence rate, and check whose segment
+- Score drifted up in the room → run the operational B-test, record it
+- All-T column read as a strategy → competent #2; the strategy is the T→D conversions
+- D a rival can copy in 6–12 months → roadmap item, not a moat (brand-locked gaps are more durable)
+
+**Chain integrity**
+- Phase 3 factors not from the Phase 2 #1 segment, or groups not the Phase 1 archetypes → phases don't chain
+- No priority-1 narrative → the matrix has no anchor
+- Jumped to differentiation before the segment is locked → reorder

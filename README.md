@@ -20,9 +20,9 @@ A Socratic framework for finding the true problem behind a product, not the dres
 
 ---
 
-### `psd-framework`
+### `psd-analysis`
 
-A structured three-phase framework for building or evaluating product strategy. Based on the product thinking of Shreyas Doshi.
+A structured three-phase analysis for building or evaluating product strategy. Based on Michael Porter's segmentation approach and the product thinking of Shreyas Doshi.
 
 **Phases:** Positioning (vision) → Segmentation (strategy) → Differentiation (execution)
 
@@ -80,7 +80,7 @@ Each skill is a folder. Place it in your Claude Code skills directory:
 
 ```
 ~/.claude/skills/raw-motivation/SKILL.md
-~/.claude/skills/psd-framework/SKILL.md
+~/.claude/skills/psd-analysis/SKILL.md
 ~/.claude/skills/critical-discernment/SKILL.md
 ~/.claude/skills/critical-discernment/references/slack-discernment-annotated.md
 ~/.claude/skills/mastery-loop/SKILL.md
