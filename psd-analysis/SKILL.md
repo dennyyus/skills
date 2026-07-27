@@ -59,9 +59,9 @@ State conditional results plainly rather than smoothing them. "The segmentation 
 
 ---
 
-## Self-audit
+## Gotchas
 
-Scan before shipping. Any line that trips means go back to that phase's reference. Also usable as a rubric for a reviewer or verifier pass.
+Every failure mode this analysis is prone to, one line each. Scan before shipping: any line that trips means go back to that phase's reference, where it's explained in full. Also usable as a rubric for a reviewer or verifier pass.
 
 **Positioning**
 - Product alone in a cell → error until proven otherwise (binary / compound / unverifiable-split axis)
