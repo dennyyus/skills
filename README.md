@@ -26,6 +26,12 @@ A structured three-phase analysis for building or evaluating product strategy. B
 
 **Phases:** Positioning (vision) → Segmentation (strategy) → Differentiation (execution)
 
+**Key features:**
+- Progressive disclosure: a lean SKILL.md routes to one reference per phase, loaded only when that phase runs
+- Each phase reference carries the failure-mode checks that catch reverse-engineered analysis — vanity cells, correlated axes, transitional states mistaken for segments, grade inflation
+- Self-audit checklist doubles as a rubric for a reviewer or verifier pass
+- `references/strategy-doc.md` assembles the output into a Rumelt kernel when it needs to become a document
+
 **Trigger when:**
 - Defining product strategy or market positioning
 - Identifying target segments
@@ -81,6 +87,10 @@ Each skill is a folder. Place it in your Claude Code skills directory:
 ```
 ~/.claude/skills/raw-motivation/SKILL.md
 ~/.claude/skills/psd-analysis/SKILL.md
+~/.claude/skills/psd-analysis/references/positioning.md
+~/.claude/skills/psd-analysis/references/segmentation.md
+~/.claude/skills/psd-analysis/references/differentiation.md
+~/.claude/skills/psd-analysis/references/strategy-doc.md
 ~/.claude/skills/critical-discernment/SKILL.md
 ~/.claude/skills/critical-discernment/references/slack-discernment-annotated.md
 ~/.claude/skills/mastery-loop/SKILL.md
